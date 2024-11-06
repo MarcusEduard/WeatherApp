@@ -1,0 +1,100 @@
+.weather-app-container {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background 0.5s ease;
+}
+
+.weather-app-container.start-bg {
+    background-image: url('../src/images/amazing-beautiful-sky-with-clouds.jpg');
+}
+.weather-app-container.sunny-bg {
+    background-image: url('../src/images/sunny.jpeg');
+}
+.weather-app-container.rainy-bg {
+    background-image: url('../src/images/rainy.jpeg');
+}
+.weather-app-container.cloudy-bg {
+    background-image: url('../src/images/cloudy.jpeg');
+}
+.weather-app-container.snowy-bg {
+    background-image: url('../src/images/snowy.jpeg');
+}
+.weather-app-container {
+    background-size: cover;
+    background-position: center;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #2196f3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather-result {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.weather-result h2 {
+    font-size: 26px;
+    color: #333;
+}
+
+.weather-result p {
+    font-size: 18px;
+    color: #555;
+}
+
+.input-field {
+    padding: 12px;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: #2196f3;
+    outline: none;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #1976d2;
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 16px;
+    margin-top: 10px;
+}
